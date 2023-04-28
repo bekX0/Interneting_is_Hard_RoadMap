@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, p {
+    background-color: #DDE0E3;
+}
+
+em, strong {
+    background-color: #B2D6FF;
+    display: inline;
+}
+
+strong{
+    margin: 50px;
+    padding: 50px;
+}
+
+h1{
+    padding: 50px;
+    /* border: 2px solid green; */
+    border-bottom: 2px solid green;
+}
+
+p{
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px; */
+    /* padding: 20px 10px; Vertical Horizontal */
+    padding: 20px 0 20px 10px; /* Top Right Bottom Left*/
+    margin-bottom: 50px;
+    margin-top: 25px; 
+    /* it collapses to above p element because top margin is smaller than bottom */
+    /* to prevent this add div with style='1px' (only consecutive elements can collapse)*/
+}
+
+div{
+    color:rgb(125, 58, 125);
+    background-color: rgb(246, 239, 110);
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid ;
+    border-radius: 10px;
+    width: 200px;
+    box-sizing: border-box;
+    /* border box is the most outside box in model so limitng this one means that limiting others */
+    margin: 20px auto;
+}

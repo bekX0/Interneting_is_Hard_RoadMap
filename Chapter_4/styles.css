@@ -1,0 +1,56 @@
+/* Stylesheets can be usable in different html files at the same time*/
+
+body {
+    color:#414141; 
+    /* This is a comment! */
+    background-color: #EEEEEE;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 2em;
+}
+/* em unit multiples body's font size so h1 has 32px(18x2) and h2 has 28.8px(1.6x18) */
+h2 {
+    font-size: 1.6em;
+}
+
+/* Multiple units */
+h1, h2, h3, h4, h5, h6{
+    font-family: "Helvetica", "Arial", sans-serif; /* browser tries the first font(Helectiva) if user doesn't have it goes to Arial if this one not available too it shows the page with system's default sans serif font*/
+    font-weight: normal;
+}
+/* if h3 stands above the general h# styles it will not cange anything */
+h3{
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: circle;/* It turns the filled circle items to empty circle items */
+}
+
+ol {
+    list-style-type: lower-roman; /*It turns integer numbers to roman numbers (lower ones)*/
+    /* there is a style type named 'none' it using for menu navigation*/
+}
+
+a {
+    color:hotpink;
+    text-decoration: none;
+}
+
+p {
+    /* text-align: right; */
+    text-align: left;
+}
+
+/* These ones swaps their usage */
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+strong{
+    font-weight: normal;
+    font-style: italic;
+}
